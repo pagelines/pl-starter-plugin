@@ -31,7 +31,7 @@ class pl_starter_plugin {
 		$this->name = 'PageLines Starter Plugin';
         $this->dir  = plugin_dir_path( __FILE__ );
         $this->url  = plugins_url( '', __FILE__ );
-        $this->icon = plugins_url( '/icon.png', __FILE__ );
+        // $this->icon = plugins_url( '/icon.png', __FILE__ );
 
 		add_action( 'template_redirect',  array(&$this,'insert_less' ));
 		add_action( 'init', array( &$this, 'init' ) );
